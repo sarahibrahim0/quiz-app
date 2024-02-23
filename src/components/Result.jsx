@@ -52,7 +52,7 @@ const Result = () => {
           onClick={() => toggleWrongAnswer()}
         >
           <span className="mr-4 text-base flex flex-row justify-between items-center cursor-pointer">
-            { initialState.wrongAnswers.length === 0? 
+            { initialState.wrongAnswers.length > 0? 
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="12"
