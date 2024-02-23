@@ -19,6 +19,16 @@ const Result = () => {
     dispacth(resetState());
     navigate("/", { replace: true });
   };
+
+  const toggleWrongAnswer = ()=>{
+    if(initialState.wrongAnswers.length === 0){
+      setShowWrongAnswers(false)
+    }
+    else{
+      setShowWrongAnswers((prev) => !prev)
+
+    }
+  }
   return (
     <>
       <div className="flex flex-col justify-around  items-center bg-bg w-[500px] min-w-[500px] min-h-[50vh] max-h-max rounded-[4px] m-auto py-[30px] px-[60px]">
@@ -39,7 +49,7 @@ const Result = () => {
 
         <div
           className="wrong flex flex-row justify-between"
-          onClick={() => setShowWrongAnswers((prev) => !prev)}
+          onClick={() => toggleWrongAnswer()}
         >
           <span className="mr-4 text-base flex flex-row justify-between items-center cursor-pointer">
             <svg
