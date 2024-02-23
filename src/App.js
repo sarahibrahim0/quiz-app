@@ -2,7 +2,7 @@ import "./App.css";
 import Question from "./components/Question";
 import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import Result from "./components/Result";
-import { UseSelector, useSelector } from "react-redux";
+import {  useSelector } from "react-redux";
 
 
 
