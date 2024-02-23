@@ -1,0 +1,27 @@
+
+.selected-answer{
+background-color: #150080;
+border: 1px solid #d08642;
+color: white;
+
+}
+
+button{
+    background: linear-gradient(0deg, #150080 .03%  , #d08642 );
+    border-radius: 9px;
+    font-size: 18px;
+    color: white;
+    padding: 10px 42px;
+    outline: none;
+    border: none;
+    margin-top : 15px;
+    cursor: pointer
+
+}
+
+button:disabled{
+    background: #e7e8e9;
+    color:"#9c9c9c";
+    cursor: not-allowed
+
+}
